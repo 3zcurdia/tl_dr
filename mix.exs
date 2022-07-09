@@ -33,7 +33,7 @@ defmodule TLDR.MixProject do
 
   defp package do
     [
-      name: "TLDR",
+      name: "tl_dr",
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/3zcurdia/tl_dr"}
     ]
