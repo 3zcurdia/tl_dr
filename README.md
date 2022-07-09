@@ -1,6 +1,6 @@
-# TlDr
+# TLDR
 
-**TODO: Add description**
+Summaries a text using the OpenAI API. 
 
 ## Installation
 
