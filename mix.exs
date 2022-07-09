@@ -26,7 +26,7 @@ defmodule TLDR.MixProject do
     [
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.28.4", only: :dev, runtime: false},
-      {:finch, "~> 0.9.0"},
+      {:finch, "~> 0.12.0"},
       {:jason, "~> 1.2"}
     ]
   end
