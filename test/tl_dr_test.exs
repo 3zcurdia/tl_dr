@@ -1,8 +1,4 @@
-defmodule TlDrTest do
+defmodule TLDRTest do
   use ExUnit.Case
-  doctest TlDr
-
-  test "greets the world" do
-    assert TlDr.hello() == :world
-  end
+  doctest TLDR
 end

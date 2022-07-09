@@ -1,4 +1,4 @@
-defmodule TlDr.MixProject do
+defmodule TLDR.MixProject do
   use Mix.Project
 
   def project do
@@ -15,7 +15,7 @@ defmodule TlDr.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {TlDr.Application, []}
+      mod: {TLDR.Application, []}
     ]
   end
 
