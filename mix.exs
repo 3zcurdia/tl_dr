@@ -6,6 +6,8 @@ defmodule TLDR.MixProject do
       app: :tl_dr,
       version: "0.1.0",
       elixir: "~> 1.13",
+      description: "Summarizes texts using the OpenAI API",
+      package: package(),
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -26,6 +28,14 @@ defmodule TLDR.MixProject do
       {:ex_doc, "~> 0.28.4", only: :dev, runtime: false},
       {:finch, "~> 0.9.0"},
       {:jason, "~> 1.2"}
+    ]
+  end
+
+  defp package do
+    [
+      name: "TLDR",
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/3zcurdia/tl_dr"}
     ]
   end
 end

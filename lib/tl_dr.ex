@@ -38,9 +38,10 @@ defmodule TLDR do
       |> Enum.filter(fn {status, _result} -> status == :ok end)
       |> Enum.map_reduce([], fn {_, result} -> result end)
 
-    cond do
-      length(results) == 0 -> {:error, "No results found"}
-      true -> {:ok, results}
+    if Enum.empty?(results) do
+      {:error, "No results found"}
+    else
+      {:ok, results}
     end
   end
 
