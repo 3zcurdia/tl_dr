@@ -15,7 +15,7 @@ defmodule TLDR.OpenAI.Client do
   end
 
   def completion(%{engine: engine} = context, body) do
-    url = "https://api.openai.com/v1/engine/#{engine}/completions"
+    url = "https://api.openai.com/v1/engines/#{engine}/completions"
 
     :post
     |> Finch.build(url, build_headers(context), Jason.encode!(body))
