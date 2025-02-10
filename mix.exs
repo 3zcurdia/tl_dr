@@ -25,7 +25,7 @@ defmodule TLDR.MixProject do
   defp deps do
     [
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.36.1", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.37.0", only: :dev, runtime: false},
       {:finch, ">= 0.12.0"},
       {:jason, "~> 1.2"}
     ]
